@@ -1,4 +1,4 @@
 def opciones():
     diccionario = {}
-    jo
-    o
+    salir = False
+    
