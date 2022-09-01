@@ -38,3 +38,42 @@ def opciones():
             else: 
                 print('\n\n" No se han agregado funciones...')
 
+    if (opcion == 3):
+            if(tamañao > 0):
+                print("Bienvenido Al Listado de funciones\n\n")
+                for x in diccionario:
+                    print(f"{x}. {diccionario[x][0]}")
+                salida = False
+                while (salida == False):
+                    try:
+                        op = int(input("Digite una opcion para eliminar: "))
+                        salida = True
+                    except:
+                        print('Error dato invalido')
+                for clave in diccionario:
+                    if (op == clave):
+                        funcion = input("Digite el nuevo nombre de la funcion: ")
+                        descripcionFun = input(
+                            "Digite la nueva descripcion de la funcion: ")
+                        diccionario[clave] = (descripcionFun, funcion)
+            else: 
+                print('\n\n" No se han agregado funciones...')
+    if (opcion == 4):
+            if(tamañao > 0):
+                print("Bienvenido Al Listado de funciones\n\n")
+                for x in diccionario:
+                    print(f"{x}. {diccionario[x][0]}")
+                salida = False
+                while (salida == False):
+                    try:
+                        op = int(input("Digite una opcion para eliminar: "))
+                        salida = True
+                    except:
+                        print('Error dato invalido')
+                new = {}
+                for clave in diccionario:
+                    if (op != clave): 
+                        new[clave] = (diccionario[clave][0], diccionario[clave][1])
+                diccionario = new; 
+            else: 
+                print('\n\n" No se han agregado funciones...')
