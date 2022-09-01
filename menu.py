@@ -20,4 +20,21 @@ def opciones():
             except:
                 print('Error dato invalido')
             print(diccionario)
-  
+    if (opcion == 2):
+            if(tamañao > 0):
+                print("Bienvenido Al Listado de funciones\n\n")
+                for x in diccionario:
+                    print(f"{x}. {diccionario[x][0]}")
+                salida = False
+                while (salida == False):
+                    try:
+                        op = int(input("Digite una opcion para eliminar: "))
+                        salida = True
+                    except:
+                        print('Error dato invalido')
+                for clave in diccionario:
+                    if (op == clave):
+                        print("Esta funcion se llama: ", diccionario[clave][1])
+            else: 
+                print('\n\n" No se han agregado funciones...')
+
