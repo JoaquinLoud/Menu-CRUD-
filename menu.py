@@ -77,3 +77,11 @@ def opciones():
                 diccionario = new; 
             else: 
                 print('\n\n" No se han agregado funciones...')
+                  if (opcion == 5):
+            salir = True
+
+
+
+if __name__ == '_main_':
+
+    opciones()
