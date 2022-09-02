@@ -26,6 +26,17 @@ def opciones():
                 for x in diccionario:
                     print(f"{x}. {diccionario[x][0]}")
                 salida = False
+                while (salida == False):
+                    try:
+                        op = int(input("Digite una opcion para Eliminar: "))
+                        salida = True
+                    except:
+                        print('Error dato invalido')
+                for clave in diccionario:
+                    if (op == clave):
+                        print("Esta funcion se llama: ", diccionario[clave][1])
+            else: 
+                print('\n\n" No se han agregado funciones...')
         
     if (opcion == 4):
             if(tamañao > 0):
