@@ -11,7 +11,7 @@ def opciones():
      print("5............SALIR")
     opcion = int(input("Digite una opcion: "))
     
-    if (opcion == 1):
+    if (opcion ==1):
             tamañao = len(diccionario)
             try:
                 funcion = input("Digite el nombre de la funcion: ")
