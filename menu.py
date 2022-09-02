@@ -13,6 +13,14 @@ def opciones():
     
     if (opcion ==1):
         tamañao = len(diccionario)
+        try:
+             funcion = input("Digite el nombre de la funcion: ")
+             descripcionFun = input("Digite la descripcion de la Funcion: ")
+             diccionario[tamañao + 1] = (descripcionFun, funcion)
+        except:
+             print('Error dato invalido')
+             print(diccionario)
+    
         
     if (opcion == 4):
             if(tamañao > 0):
