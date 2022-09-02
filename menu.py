@@ -37,6 +37,7 @@ def opciones():
                         print("Esta funcion se llama: ", diccionario[clave][1])
             else: 
                 print('\n\n" No se han agregado funciones...')
+                if (opcion == 3):
         
     if (opcion == 4):
             if(tamañao > 0):
