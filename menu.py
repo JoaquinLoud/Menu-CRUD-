@@ -1,17 +1,20 @@
+"""Combinemos las clases con las listas, contemplando que deseamos
+ introducir n numeros de personas con las mismas propiedades 
+hasta que el usuario no desee seguir ingresando personas."""
 def opciones():
     diccionario = {}
     salir = False
     while (salir == False):
-     tamañao = len(diccionario)
-     print("Bienvenido Al Menu\n\n")
-     print("1............AGREGAR")
-     print("2............MOSTRAR")
-     print("3............EDITAR")
-     print("4............ELIMINAR")
-     print("5............SALIR")
-    opcion = int(input("Digite una opcion: "))
-    
-    if (opcion == 1):
+        tamañao = len(diccionario)
+        print("Bienvenido Al Menu\n\n")
+        print("1............AGREGAR")
+        print("2............MOSTRAR")
+        print("3............EDITAR")
+        print("4............ELIMINAR")
+        print("5............SALIR")
+        opcion = int(input("Digite una opcion: "))
+
+        if (opcion == 1):
             tamañao = len(diccionario)
             try:
                 funcion = input("Digite el nombre de la funcion: ")
@@ -20,7 +23,8 @@ def opciones():
             except:
                 print('Error dato invalido')
             print(diccionario)
-    if (opcion == 2):
+
+        if (opcion == 2):
             if(tamañao > 0):
                 print("Bienvenido Al Listado de funciones\n\n")
                 for x in diccionario:
@@ -38,7 +42,7 @@ def opciones():
             else: 
                 print('\n\n" No se han agregado funciones...')
 
-    if (opcion == 3):
+        if (opcion == 3):
             if(tamañao > 0):
                 print("Bienvenido Al Listado de funciones\n\n")
                 for x in diccionario:
@@ -58,7 +62,7 @@ def opciones():
                         diccionario[clave] = (descripcionFun, funcion)
             else: 
                 print('\n\n" No se han agregado funciones...')
-    if (opcion == 4):
+        if (opcion == 4):
             if(tamañao > 0):
                 print("Bienvenido Al Listado de funciones\n\n")
                 for x in diccionario:
@@ -75,13 +79,13 @@ def opciones():
                     if (op != clave): 
                         new[clave] = (diccionario[clave][0], diccionario[clave][1])
                 diccionario = new; 
-            else: 
-                print('\n\n" No se han agregado funciones...')
-                if (opcion == 5):
-                    salir = True
+        else: 
+            print('\n\n" No se han agregado funciones...')                   
+        if (opcion == 5):
+            salir = True
 
 
 
-if __name__ == '_main_':
-
+if __name__ == '__main__':
+    
     opciones()
