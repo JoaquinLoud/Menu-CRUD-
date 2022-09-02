@@ -77,7 +77,7 @@ def opciones():
                         new[clave] = (diccionario[clave][0], diccionario[clave][1])
                 diccionario = new; 
             else: 
-                print('\n\n" No se han agregado funciones...')
+                print('\n\n" No se han agregado Funciones...')
                 if (opcion == 5):
                     salir = True
 
