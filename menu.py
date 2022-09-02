@@ -12,7 +12,8 @@ def opciones():
     opcion = int(input("Digite una opcion: "))
     
     if (opcion ==1):
-            tamañao = len(diccionario)
+        
+             tamañao = len(diccionario)
             try:
                 funcion = input("Digite el nombre de la funcion: ")
                 descripcionFun = input("Digite la descripcion de la Funcion: ")
@@ -69,7 +70,7 @@ def opciones():
                         op = int(input("Digite una opcion para eliminar: "))
                         salida = True
                     except:
-                        print('Error dato invalido')
+                        print('Error dato Invalido')
                 new = {}
                 for clave in diccionario:
                     if (op != clave): 
