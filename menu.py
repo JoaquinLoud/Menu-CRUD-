@@ -15,20 +15,20 @@ def opciones():
             tamañao = len(diccionario)
             try:
                 funcion = input("Digite el nombre de la funcion: ")
-                descripcionFun = input("Digite la descripcion de la funcion: ")
+                descripcionFun = input("Digite la descripcion de la Funcion: ")
                 diccionario[tamañao + 1] = (descripcionFun, funcion)
             except:
                 print('Error dato invalido')
             print(diccionario)
     if (opcion == 2):
             if(tamañao > 0):
-                print("Bienvenido Al Listado de funciones\n\n")
+                print("Bienvenido Al Listado de Funciones\n\n")
                 for x in diccionario:
                     print(f"{x}. {diccionario[x][0]}")
                 salida = False
                 while (salida == False):
                     try:
-                        op = int(input("Digite una opcion para eliminar: "))
+                        op = int(input("Digite una opcion para Eliminar: "))
                         salida = True
                     except:
                         print('Error dato invalido')
@@ -40,19 +40,19 @@ def opciones():
 
     if (opcion == 3):
             if(tamañao > 0):
-                print("Bienvenido Al Listado de funciones\n\n")
+                print("Bienvenido Al Listado de Funciones\n\n")
                 for x in diccionario:
                     print(f"{x}. {diccionario[x][0]}")
                 salida = False
                 while (salida == False):
                     try:
-                        op = int(input("Digite una opcion para eliminar: "))
+                        op = int(input("Digite una opcion para Eliminar: "))
                         salida = True
                     except:
                         print('Error dato invalido')
                 for clave in diccionario:
                     if (op == clave):
-                        funcion = input("Digite el nuevo nombre de la funcion: ")
+                        funcion = input("Digite el nuevo nombre de la Funcion: ")
                         descripcionFun = input(
                             "Digite la nueva descripcion de la funcion: ")
                         diccionario[clave] = (descripcionFun, funcion)
