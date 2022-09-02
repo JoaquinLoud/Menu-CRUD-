@@ -29,7 +29,7 @@ def opciones():
                 print("Bienvenido Al Listado de funciones\n\n")
                 for x in diccionario:
                     print(f"{x}. {diccionario[x][0]}")
-                salida = False
+                    salida = False
                 while (salida == False):
                     try:
                         op = int(input("Digite una opcion para eliminar: "))
@@ -58,7 +58,7 @@ def opciones():
                     if (op == clave):
                         funcion = input("Digite el nuevo nombre de la funcion: ")
                         descripcionFun = input(
-                            "Digite la nueva descripcion de la funcion: ")
+                        "Digite la nueva descripcion de la funcion: ")
                         diccionario[clave] = (descripcionFun, funcion)
             else: 
                 print('\n\n" No se han agregado funciones...')
