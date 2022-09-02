@@ -23,6 +23,9 @@ def opciones():
     if (opcion == 2):
             if(tamañao > 0):
                 print("Bienvenido Al Listado de Funciones\n\n")
+                for x in diccionario:
+                    print(f"{x}. {diccionario[x][0]}")
+                salida = False
         
     if (opcion == 4):
             if(tamañao > 0):
