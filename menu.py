@@ -20,7 +20,9 @@ def opciones():
         except:
              print('Error dato invalido')
              print(diccionario)
-    
+    if (opcion == 2):
+            if(tamañao > 0):
+                print("Bienvenido Al Listado de Funciones\n\n")
         
     if (opcion == 4):
             if(tamañao > 0):
